@@ -15,9 +15,9 @@ async function scrapeXVideosModelVideos() {
   await page.goto('https://www.xvideos.com/change-language/fr', { waitUntil: 'networkidle2' });
 
   const allVideos = [];
-  const totalPages = 11; // total de páginas que você mencionou
+  const totalPages = 4; // total de páginas que você mencionou
   for (let i = 1; i <= totalPages; i++) {
-    const url = `https://www.xvideos.com/dorcelclub#_tabVideos,page-${i}`;
+    const url = `https://fr.xvideos.com/madelaine_rousset#_tabVideos,page-${i}`;
     console.log(`Acessando página ${i}: ${url}`);
     await page.goto(url, { waitUntil: 'networkidle2' });
 
